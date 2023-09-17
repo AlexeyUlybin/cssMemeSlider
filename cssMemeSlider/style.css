@@ -4,6 +4,7 @@ body {
     background-color: #333;
 }
 .slider {
+    margin: 0px;
     position: relative;
     width: 62%;
     overflow: hidden;
@@ -11,10 +12,97 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0px;
 }
 .slider-line {
+    width: 100%;
+    margin: 20px 0px;
     align-items: center;
     display: flex;
     transition: all 0.5s;
-
+}
+.slider-img {
+    border-radius: 30px;
+    width: 100%;
+}
+.slider-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    justify-content: space-between;
+}
+.slider-pag {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+.slider-btn {
+    width: 34px;
+    height: 40px;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: #333;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.slider-btn:hover > .slider-dot {
+    background: #fff;
+    border: 2px #fff;
+    transition: 0.3s;
+}
+.slider-btn:hover > .slider-dot-active {
+    border: solid 2px #fff;
+    transition: 0.3s;
+}
+.slider-dot {
+    box-sizing: border-box;
+    margin: 10px 5px;
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+    border: solid 2px rgb(83, 150, 177);
+    background-color: rgb(83, 150, 177);
+    border-radius: 10px;
+}
+.slider-dot-active {
+    box-sizing: border-box;
+    margin: 10px 5px;
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+    border: solid 2px rgb(83, 150, 177);
+    background-color: #333;
+    border-radius: 10px;
+}
+.slider-text-window {
+    margin: 0px;
+    position: relative;
+    width: 62%;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+.slider-text {
+    width: 100%;
+    position: relative;
+    margin: 0px;
+    align-items: start;
+    display: flex;
+    transition: all 0.5s;
+    gap: 0%;
+}
+.meme-line {
+    min-width: 100%;
+    font-weight: 500;
+    font-size:xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    letter-spacing: 1.2px;
+    margin: 0px;
 }
