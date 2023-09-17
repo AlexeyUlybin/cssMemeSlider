@@ -36,6 +36,7 @@ body {
     display: flex;
     margin: 0px;
     padding: 0px;
+    justify-content: space-between;
 }
 .slider-btn {
     width: 34px;
@@ -50,33 +51,29 @@ body {
     transition: 0.3s;
 }
 .slider-btn:hover > .slider-dot {
-    background: #fff;
-    border: 2px #fff;
     transition: 0.3s;
 }
-.slider-btn:hover > .slider-dot-active {
+.slider-btn:hover > .slider-dot-off {
+    background: #fff;
     border: solid 2px #fff;
-    transition: 0.3s;
+}
+.slider-btn:hover > .slider-dot-on {
+    border: solid 2px #fff;
 }
 .slider-dot {
     box-sizing: border-box;
-    margin: 10px 5px;
+    margin: 10px 7px;
     padding: 0px;
     width: 20px;
     height: 20px;
     border: solid 2px rgb(83, 150, 177);
-    background-color: rgb(83, 150, 177);
     border-radius: 10px;
 }
-.slider-dot-active {
-    box-sizing: border-box;
-    margin: 10px 5px;
-    padding: 0px;
-    width: 20px;
-    height: 20px;
-    border: solid 2px rgb(83, 150, 177);
+.slider-dot-on {
     background-color: #333;
-    border-radius: 10px;
+}
+.slider-dot-off {
+    background-color: rgb(83, 150, 177);
 }
 .slider-text-window {
     margin: 0px;
