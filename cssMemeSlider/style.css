@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+.slider {
+    position: relative;
+    width: 62%;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.slider-line {
+    align-items: center;
+    display: flex;
+    transition: all 0.5s;
+
+}
