@@ -5,7 +5,7 @@ body {
 }
 .slider {
     margin: 0px;
-    position: relative;
+    position: static;
     width: 62%;
     overflow: hidden;
     display: flex;
@@ -95,7 +95,7 @@ body {
 }
 .slider-text-window {
     margin: 0px;
-    position: relative;
+    position: static;
     width: 62%;
     overflow: hidden;
     align-items: center;
@@ -105,7 +105,7 @@ body {
 }
 .slider-text {
     width: 100%;
-    position: relative;
+    position: static;
     margin: 0px;
     align-items: start;
     display: flex;
