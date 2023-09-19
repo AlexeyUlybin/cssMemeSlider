@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slider">
+        <input type="radio" class="m" name="meme" id="m1" checked>
+        <input type="radio" class="m" name="meme" id="m2">
+        <input type="radio" class="m" name="meme" id="m3">
+        <input type="radio" class="m" name="meme" id="m4">
+        <div class="slider-line">
+
+            <div class="slide m-active"><img class="slider-img" id="img1" src="assets/first.jpg"></div>
+            <div class="slide"><img class="slider-img" id="img2" src="assets/second.jpg"></div>
+            <div class="slide"><img class="slider-img" id="img3" src="assets/third.jpg"></div>
+            <div class="slide"><img class="slider-img" id="img4" src="assets/forth.jpg"></div>
+        </div>
+        <div class="slider-bottom">
+            <div class="slider-pag">
+                <label for="m1" class="slider-btn" id="btn-1"><div class="slider-dot" id="dot-1"></div></label>
+                <label for="m2" class="slider-btn" id="btn-2"><div class="slider-dot" id="dot-2"></div></label>
+                <label for="m3" class="slider-btn" id="btn-3"><div class="slider-dot" id="dot-3"></div></label>
+                <label for="m4" class="slider-btn" id="btn-4"><div class="slider-dot" id="dot-4"></div></label>
+            </div>
+            <!-- <label for="t1" class="text-label"></label> -->
+            <div class="slider-text-window">
+                <div class="slider-text">
+                    <p class="meme-line show-text" id="line-1">Say 'Hello World'</p>
+                    <p class="meme-line" id="line-2">When the validator show no errors, no warnings</p>
+                    <p class="meme-line" id="line-3">"You were supposed to fix the bug, not to crash the whole code!"</p>
+                    <p class="meme-line" id="line-4">You can't just start task earlier then last few nights before deadline</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
