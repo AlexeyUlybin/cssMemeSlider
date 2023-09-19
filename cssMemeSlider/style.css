@@ -8,16 +8,18 @@ body {
     position: relative;
     width: 62%;
     overflow: hidden;
-    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0px;
 }
+.slide {
+    width: 25%;
+    transition: all 0.5s;
+}
 .slider-line {
-    width: 100%;
+    width: 400%;
     margin: 20px 0px;
-    align-items: center;
     display: flex;
     transition: all 0.5s;
 }
@@ -25,6 +27,32 @@ body {
     border-radius: 30px;
     width: 100%;
 }
+#m1:checked ~ .slider-line .m-active {
+    margin-left: 0;
+}
+#m2:checked ~ .slider-line .m-active {
+    margin-left: -25%;
+}
+#m3:checked ~ .slider-line .m-active {
+    margin-left: -50%;
+}
+#m4:checked ~ .slider-line .m-active {
+    margin-left: -75%;
+}
+ #m1:checked ~ .slider-bottom .slider-pag .slider-btn #dot-1 {
+    background-color: #333;
+}
+#m2:checked ~ .slider-bottom .slider-pag .slider-btn #dot-2 {
+    background-color: #333;
+}
+#m3:checked ~ .slider-bottom .slider-pag .slider-btn #dot-3 {
+    background-color: #333;
+}
+#m4:checked ~ .slider-bottom .slider-pag .slider-btn #dot-4 {
+    background-color: #333;
+}
+
+
 .slider-bottom {
     width: 100%;
     display: flex;
@@ -52,13 +80,8 @@ body {
 }
 .slider-btn:hover > .slider-dot {
     transition: 0.3s;
-}
-.slider-btn:hover > .slider-dot-off {
+    border: solid 2px #fff;
     background: #fff;
-    border: solid 2px #fff;
-}
-.slider-btn:hover > .slider-dot-on {
-    border: solid 2px #fff;
 }
 .slider-dot {
     box-sizing: border-box;
@@ -67,13 +90,8 @@ body {
     width: 20px;
     height: 20px;
     border: solid 2px rgb(83, 150, 177);
-    border-radius: 10px;
-}
-.slider-dot-on {
-    background-color: #333;
-}
-.slider-dot-off {
     background-color: rgb(83, 150, 177);
+    border-radius: 10px;
 }
 .slider-text-window {
     margin: 0px;
@@ -102,7 +120,23 @@ body {
     color: #fff;
     letter-spacing: 1.2px;
     margin: 0px;
+    transition: all 0.5s;
 }
+
+#m1:checked ~ .slider-bottom .slider-text-window .slider-text .show-text {
+    margin-left: 0;
+}
+#m2:checked ~ .slider-bottom .slider-text-window .slider-text .show-text {
+    margin-left: -100%;
+}
+#m3:checked ~ .slider-bottom .slider-text-window .slider-text .show-text {
+    margin-left: -200%;
+}
+#m4:checked ~ .slider-bottom .slider-text-window .slider-text .show-text {
+    margin-left: -300%;
+}
+
+
 @media screen and (max-width: 768px) {
     .meme-line {
         font-size:large;
@@ -129,4 +163,8 @@ body {
     .slider-text-window {
         width: 100%;
     }
+}
+.m {
+    position: absolute;
+    visibility: hidden;
 }
